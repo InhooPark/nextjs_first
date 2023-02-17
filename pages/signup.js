@@ -4,7 +4,7 @@ import axios from "axios";
 import { useRouter } from "next/router";
 import React, { useEffect, useRef, useState } from "react";
 
-const signup = () => {
+const Signup = () => {
   const [suData, setSuData] = useState();
   const count = useRef(0);
   const router = useRouter();
@@ -66,4 +66,4 @@ const signup = () => {
   );
 };
 
-export default signup;
+export default Signup;

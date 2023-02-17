@@ -4,7 +4,7 @@ import axios from "axios";
 import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 
-const login = () => {
+const Login = () => {
   const router = useRouter();
   const [inputValue, setInputValue] = useState({ id: "", name: "", email: "", password: "" });
   const [logData, setLogData] = useState();
@@ -16,7 +16,7 @@ const login = () => {
     });
   }, []);
 
-  const login = (e) => {
+  const loginsubmit = (e) => {
     e.preventDefault();
     let check = logData.filter((obj) => obj.email === e.target.email.value && obj.password === e.target.password.value);
     setMy(check);
@@ -44,7 +44,7 @@ const login = () => {
     <>
       <Layout>
         <Headmeta title="LOGIN" />
-        <form onSubmit={login}>
+        <form onSubmit={loginsubmit}>
           <input type="email" onChange={changeValue} placeholder="E-mail" name="email"></input>
           <input type="password" onChange={changeValue} placeholder="Password" name="password"></input>
           <input type="submit" value="Login" />
@@ -57,4 +57,4 @@ const login = () => {
   );
 };
 
-export default login;
+export default Login;

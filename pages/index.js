@@ -12,6 +12,7 @@ export default function Home() {
       router.push("/login");
     }
   }, []);
+
   return (
     <>
       <Headmeta title="INDEX" />

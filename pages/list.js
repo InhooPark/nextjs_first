@@ -4,7 +4,7 @@ import Layout from "@/component/Layout";
 import Question from "@/component/Question";
 import React from "react";
 
-const list = () => {
+const List = () => {
   return (
     <Layout>
       <Headmeta title="LIST" />
@@ -14,4 +14,4 @@ const list = () => {
   );
 };
 
-export default list;
+export default List;
