@@ -1,0 +1,46 @@
+.list_article {
+  > h2 {
+  }
+  > ul {
+    > li {
+      > div {
+        .profile_wrap {
+          .img_wrap {
+            overflow: hidden;
+            img {
+              width: 100%;
+              object-fit: cover;
+            }
+          }
+          .profile_name {
+          }
+        }
+        .question_txt {
+        }
+        input {
+          display: none;
+          &.on {
+            display: block;
+          }
+        }
+        > p {
+          > button {
+          }
+        }
+      }
+      .answer_wrap {
+        input {
+        }
+        > p {
+        }
+      }
+    }
+  }
+}
+
+.list_form {
+  .question {
+  }
+  .questionBtn {
+  }
+}
