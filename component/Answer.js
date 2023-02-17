@@ -53,7 +53,7 @@ const Answer = () => {
                   <span className={list.question_txt}>{obj.question}</span>
                   <p>
                     <button onClick={() => dataUpdate(obj)}>수정</button>
-                    <button onClick={() => dataRemove(obj.id)}>삭제</button>
+                    <button onClick={() => dataRemove(obj.date)}>삭제</button>
                   </p>
                 </div>
                 <form className={list.answer_wrap} onSubmit={answerGet}>

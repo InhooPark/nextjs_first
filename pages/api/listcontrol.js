@@ -12,12 +12,12 @@ export default function handler(req, res) {
     datasave();
   };
   const dataput = () => {
-    let user = database.find((obj) => obj.id === body.id);
+    let user = database.find((obj) => obj.date === body.date);
     Object.assign(user, body);
     datasave();
   };
   const datadelete = () => {
-    database = database.filter((obj) => obj.id !== body);
+    database = database.filter((obj) => obj.date !== body);
     datasave();
   };
   const datasave = () => {
